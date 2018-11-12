@@ -157,3 +157,31 @@ sys	0m0.004s
 
 ¿Qué tan rápido es 0.006s? ¿6 milisegundos es lento? Te dejo la busqueda de esas respuestas a ti!
 
+### Hola Mundo 2.0
+
+Vamos a ver un ejemplo un poco más complejo pidiendo datos al usuario mediente el teclado de su ordenador, guardandolo en una variable e imprimiendolo en la consola.
+
+Para este ejemplo lo primero que necesitamos saber es: **¿Cómo puedo crear una variable en Go?**
+
+Lo haremos de la siguiente manera :
+
+```
+var <nombre_variable> <tipo_variable>
+```
+
+Por ejemplo para crear una variable de tipo nombre llamada `name` de tipo String lo haremos de la siguiente forma:
+
+```
+var name string
+```
+
+Lo siguiente que demos saber hacer es **pedir datos al usuario mediante el teclado de su ordenador**. Para hacer esto usaremos una función de la libreria `fmt` llamada `Scanf`. Con esta función podemos pedir un dato al usuario para que lo introduzca mediante su teclado y guardar el contenido en una variable que nosotros queramos. 
+
+Usando la variable `name` del ejemplo anterior quedaría de la siguiente manera: 
+
+```
+fmt.Scanf("%s", &name)
+```
+
+1. Con `%s` le estamos diciendo a Scanf que queremos que el usuario nos devuelva contenido de tipo `string`.
+2. Con `&name`, más exactamente con el carácter `&`, le estamos diciendo a Scanf que guarde el contenido en la variable `name`.
