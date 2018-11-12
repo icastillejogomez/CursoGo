@@ -24,15 +24,36 @@ El día de la publicación del lenguaje Go, Francis McCabe, desarrollador del le
 
 Dirígete a la [página web](https://golang.org/dl/) de Go para descargar los binarios de tu sistema operativo.
 
-Para comprobar si se ha instalado correctamente puedes ejecutar el siguiente comando
+Para comprobar si se ha instalado correctamente puedes ejecutar el siguiente comando:
 
 ```
 $ go version
 ```
 
-Ejemplo en MacOS:
+Un ejemplo en MacOS es el siguiente:
 
 ```
 $ go version
 go version go1.10.3 darwin/amd64
 ```
+
+Si vas a instalar Go en Windows porque no eres capaz de esforzarte en aprender Linux lee este artículo para que no te explote la cabeza: [Instalación de GO (Golang)
+](https://medium.com/@golang_es/instalaci%C3%B3n-de-go-golang-6fd5d7b9eb48)
+
+## Workspace
+
+Go por defecto trabaja con workspaces. El workspace por defecto lo podemos averiguar ejecutando el siguiente comando aunque en las nuevas versiones de Go este se establece automáticamente al instalar el ejecutable de Go en nuestra carpeta Home bajo el directorio go, es decir: `~/go`
+
+```
+$ go env GOPATH
+/Users/<username>/go
+```
+
+o en Linux, por defecto:
+
+```
+$ go env GOPATH
+/home/<username>/go
+```
+
+
