@@ -225,6 +225,8 @@ Y si... te estarás pregutando **¿Qué es Printf?** Es una función que nos ofr
 
 Solo nos queda aclarar algo de lo que seguro ya te has dado cuenta... ¿Cómo podemos poner comentarios? O... ¿Qué narices es un comentario?
 
+### Comentarios
+
 Un comentario es una zona de nuestro código que **no** será ejecutada. Se utilizan como anotaciones para explicar de una manera sencilla que hace el código que les acompaña. Pensad que en un proyecto en el que trabajan muchas personas y que va a durar en el tiempo se escribirá código que no volverá a ser visto pasado el suficiente tiempo como para que ni el que lo escribió se acuerde de que hace su propio código.
 
 Existen dos formas de comentario:
