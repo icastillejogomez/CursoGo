@@ -29,3 +29,10 @@ Para comprobar si se ha instalado correctamente puedes ejecutar el siguiente com
 ```
 $ go version
 ```
+
+Ejemplo en MacOS:
+
+```
+$ go version
+go version go1.10.3 darwin/amd64
+```
