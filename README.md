@@ -112,6 +112,7 @@ func main() {
 	fmt.Print("Hola mundo\n")
 }
 ```
+##### Puedes encontrar el archivo [aquí](https://github.com/icastillejogomez/CursoGo/blob/master/src/github.com/icastillejogomez/CursoGo/HolaMundo/main.go)
 
 Y para correr nuestro hola mundo ejecutaramos el siguiente comando:
 
