@@ -22,6 +22,4 @@ El día de la publicación del lenguaje Go, Francis McCabe, desarrollador del le
 
 ## Instalación
 
-### En MacOS:
-
-### En Linux:
+Dirígete a la [página web](https://golang.org/dl/) de Go para descargar los binarios de tu sistema operativo.
