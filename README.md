@@ -231,6 +231,6 @@ Un comentario es una zona de nuestro código que **no** será ejecutada. Se util
 
 Existen dos formas de comentario:
 
-1. Comentarios de lineas. Son los que habéis visto hasta ahora. Se inician con `//` y indican que desde ahí hasta **el final de esa misma linea** todo será interpretado como un comentario a la hora de ejecutar el programa.
-2. Comentarios de varias lineas. Como podéis imaginar los comentarios de varias lineas afectan a varias lineas. Se inician con `/*` y terminan con `*/` y todo lo que haya entre medias será interpretado como un comentario a la hora de ejecutar el programa.
+1. **Comentarios de lineas**: Son los que habéis visto hasta ahora. Se inician con `//` y indican que desde ahí hasta **el final de esa misma linea** todo será interpretado como un comentario a la hora de ejecutar el programa.
+2. **Comentarios de varias lineas**: Como podéis imaginar los comentarios de varias lineas afectan a varias lineas. Se inician con `/*` y terminan con `*/` y todo lo que haya entre medias será interpretado como un comentario a la hora de ejecutar el programa.
 
