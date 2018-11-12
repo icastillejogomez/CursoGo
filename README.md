@@ -209,6 +209,7 @@ func main() {
 	fmt.Printf("Registro completado con exito %s\n", name)
 }
 ```
+###### Puedes encontrar el archivo [aquí.](https://github.com/icastillejogomez/CursoGo/blob/master/src/github.com/icastillejogomez/CursoGo/HolaMundo2.0/main.go)
 
 Cuyo resultado si lo ejecutamos es:
 
