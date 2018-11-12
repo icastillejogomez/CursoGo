@@ -40,9 +40,13 @@ go version go1.10.3 darwin/amd64
 Si vas a instalar Go en Windows porque no eres capaz de esforzarte en aprender Linux lee este artículo para que no te explote la cabeza: [Instalación de GO (Golang)
 ](https://medium.com/@golang_es/instalaci%C3%B3n-de-go-golang-6fd5d7b9eb48)
 
-## Workspace
+## Primeros pasos con Go después de instalarlo
 
-Go trabaja con workspaces. El workspace por defecto lo podemos averiguar ejecutando el siguiente comando aunque en las nuevas versiones de Go este se establece automáticamente al instalar el ejecutable de Go en nuestra carpeta Home bajo el directorio go, es decir: `~/go`
+### Workspace ¿Qué es?
+
+Go trabaja con workspaces. Un workspace no es más que la carpeta donde estará tu proyecto de go.
+
+El workspace por defecto lo podemos averiguar ejecutando el siguiente comando aunque en las nuevas versiones de Go este se establece automáticamente al instalar el ejecutable de Go en nuestra carpeta Home bajo el directorio go, es decir: `~/go`
 
 ```
 $ go env GOPATH
@@ -65,7 +69,7 @@ $ export GOPATH="/tu/ruta"
 El cual exporta una variable de entorno en el sistema operativo para que el ejecutable de Go pueda obtener su contenido.
 
 
-Bueno, empezemos configurando nuestro espacio de trabajo. Yo, en esta caso, tengo la carpeta donde quiero guardar mi trabajo en la ruta `/~/Github/CursoGo` por lo que ejecutaré el siguiente comando:
+Bueno, empezemos configurando nuestro espacio de trabajo. Yo, en esta caso, tengo la carpeta donde quiero guardar mi trabajo en la ruta `~/Github/CursoGo` por lo que ejecutaré el siguiente comando:
 
 ```
 $ export GOPATH="/Users/<username>/Github/CursoGo"
@@ -77,7 +81,7 @@ O bien, estando con el terminal en la carpeta que queramos que sea nuestro works
 $ export GOPATH="$(pwd)"
 ```
 
-Dentro de esta carpeta crearemos al siguiente estructura de carpetas, la cual no va a tener ninguna lógica para el lector nobel pero más adelante le encontraremos la explicación. *Tenéis que hacer un acto de fe*.
+Dentro de esta carpeta crearemos la siguiente estructura de carpetas, la cual no va a tener ninguna lógica para el lector nobel pero más adelante le encontraremos la explicación. **Tenéis que hacer un acto de fe**.
 
 ```
 $ mkdir -p $GOPATH/src/github.com/icastillejogomez/CursoGo
@@ -85,4 +89,56 @@ $ mkdir -p $GOPATH/src/github.com/icastillejogomez/CursoGo
 
 Una explicación muy breve es: Crearemos todo nuestro código dentro de la carpeta `src` dentro de nuestro workspace. Por motivos de importación (que se verá más adelante) tenemos que crear una estructura de carpetas que coincida con el repositorio Git en el que guardaremos nuestro código.
 
+### Hola mundo
 
+Crearemos un archivo llamado `main.go` dentro de la carpeta `CursoGo/HolaMundo`:
+
+```
+$ mkdir HolaMundo
+$ touch HolaMundo/main.go
+```
+
+Dentro de este archivo añadiremos el siguiente contenido:
+
+```
+$ cat HolaMundo/main.go
+package main
+
+// Importamos la libreria para poder imprimir mensajes por consola
+import "fmt"
+
+// Punto de entrada de nuestro programa
+func main() {
+	fmt.Print("Hola mundo\n")
+}
+```
+
+Y para correr nuestro hola mundo ejecutaramos el siguiente comando:
+
+```
+$ go run HolaMundo/main.go
+Hola mundo
+```
+
+Y si! Ya se que dijé que Go es un lenguaje compilado y aquí esta la prueba:
+
+Compilamos nuestro código a un archivo ejecutable con nombre `main`:
+```
+$ go build -o HolaMundo/main HolaMundo/main.go
+```
+
+Comprobamos que nos ha generado un archivo `main` con permisos de ejecución:
+```
+$ ls -la HolaMundo/
+total 4104
+drwxr-xr-x  4 nacho  staff      128 Nov 12 08:31 .
+drwxr-xr-x  3 nacho  staff       96 Nov 12 08:30 ..
+-rwxr-xr-x  1 nacho  staff  2093184 Nov 12 08:31 main
+-rw-r--r--@ 1 nacho  staff      177 Nov 12 08:27 main.go
+```
+
+Ejecutamos nuestro programa y obtenemos el mismo resultado:
+```
+$ HolaMundo/main
+Hola mundo
+```
