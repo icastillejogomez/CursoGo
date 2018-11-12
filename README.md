@@ -56,4 +56,10 @@ $ go env GOPATH
 /home/<username>/go
 ```
 
+Podemos modificar el workspace con el siguiente comando:
 
+```
+$ export GOPATH="/tu/ruta"
+```
+
+El cual exporta una variable de entorno en el sistema operativo para que el ejecutable de Go pueda obtener su contenido.
