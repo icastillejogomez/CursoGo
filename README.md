@@ -63,3 +63,26 @@ $ export GOPATH="/tu/ruta"
 ```
 
 El cual exporta una variable de entorno en el sistema operativo para que el ejecutable de Go pueda obtener su contenido.
+
+
+Bueno, empezemos configurando nuestro espacio de trabajo. Yo, en esta caso, tengo la carpeta donde quiero guardar mi trabajo en la ruta `/~/Github/CursoGo` por lo que ejecutaré el siguiente comando:
+
+```
+$ export GOPATH="/Users/<username>/Github/CursoGo"
+```
+
+O bien, estando con el terminal en la carpeta que queramos que sea nuestro workspace ejecutamos:
+
+```
+$ export GOPATH="$(pwd)"
+```
+
+Dentro de esta carpeta crearemos al siguiente estructura de carpetas, la cual no va a tener ninguna lógica para el lector nobel pero más adelante le encontraremos la explicación. *Tenéis que hacer un acto de fe*.
+
+```
+$ mkdir -p $GOPATH/src/github.com/icastillejogomez/CursoGo
+```
+
+Una explicación muy breve es: Crearemos todo nuestro código dentro de la carpeta `src` dentro de nuestro workspace. Por motivos de importación (que se verá más adelante) tenemos que crear una estructura de carpetas que coincida con el repositorio Git en el que guardaremos nuestro código.
+
+
