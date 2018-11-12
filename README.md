@@ -185,3 +185,40 @@ fmt.Scanf("%s", &name)
 
 1. Con `%s` le estamos diciendo a Scanf que queremos que el usuario nos devuelva contenido de tipo `string`.
 2. Con `&name` le estamos diciendo a Scanf que guarde el contenido en la variable `name`.
+
+Con todo esto estamos listos para crear el siguient ejemplo:
+
+```
+$ cat HolaMundo2.0/main.go
+package main
+
+// Importamos la libreria para poder imprimir mensajes por consola
+import "fmt"
+
+// Punto de entrada de nuestro programa
+func main() {
+
+	// Creamos la variable donde vamos a guardar el nombre
+	var name string
+
+	// Pedimos el nombre del usuario
+	fmt.Print("Por favor, indique su nombre: > ")
+	fmt.Scanf("%s", &name)
+
+	// Imprimimos el nombre del usuario por pantalla
+	fmt.Printf("Registro completado con exito %s\n", name)
+}
+```
+
+Cuyo resultado si lo ejecutamos es:
+
+```
+$ go run HolaMundo2.0/main.go
+Por favor, indique su nombre: > Ignacio
+Registro completado con exito Ignacio
+```
+
+Y si... te estarás pregutando **¿Qué es Printf?** Es una función que nos ofrece la libreria `fmt` para concatenar un mensaje que queremos imprimir con variables. De esta forma cuando le estamos escribiendo `%s` le estamos diciendo que ahí irá un texto. **¿Cuál?** El que nosotros le pasamos a continuación que es `name`. 
+
+**¿Es facil verdad?**
+
