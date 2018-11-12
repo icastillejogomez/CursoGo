@@ -151,7 +151,7 @@ Hola mundo
 
 real	0m0.006s
 user	0m0.001s
-sys		0m0.004s
+sys	0m0.004s
 ```
 
 ¿Qué tan rápido es 0.006s? ¿6 milisegundos es lento? Te dejo la busqueda de esas respuestas a ti!
