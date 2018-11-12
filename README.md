@@ -184,4 +184,4 @@ fmt.Scanf("%s", &name)
 ```
 
 1. Con `%s` le estamos diciendo a Scanf que queremos que el usuario nos devuelva contenido de tipo `string`.
-2. Con `&name`, más exactamente con el carácter `&`, le estamos diciendo a Scanf que guarde el contenido en la variable `name`.
+2. Con `&name` le estamos diciendo a Scanf que guarde el contenido en la variable `name`.
