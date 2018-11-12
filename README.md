@@ -23,3 +23,9 @@ El día de la publicación del lenguaje Go, Francis McCabe, desarrollador del le
 ## Instalación
 
 Dirígete a la [página web](https://golang.org/dl/) de Go para descargar los binarios de tu sistema operativo.
+
+Para comprobar si se ha instalado correctamente puedes ejecutar el siguiente comando
+
+```
+$ go version
+```
