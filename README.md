@@ -42,7 +42,7 @@ Si vas a instalar Go en Windows porque no eres capaz de esforzarte en aprender L
 
 ## Workspace
 
-Go por defecto trabaja con workspaces. El workspace por defecto lo podemos averiguar ejecutando el siguiente comando aunque en las nuevas versiones de Go este se establece automáticamente al instalar el ejecutable de Go en nuestra carpeta Home bajo el directorio go, es decir: `~/go`
+Go trabaja con workspaces. El workspace por defecto lo podemos averiguar ejecutando el siguiente comando aunque en las nuevas versiones de Go este se establece automáticamente al instalar el ejecutable de Go en nuestra carpeta Home bajo el directorio go, es decir: `~/go`
 
 ```
 $ go env GOPATH
